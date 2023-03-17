@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        v2ray使用教程 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i>  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.jpg" class="js-avatar show" />
+        </div>
+        <div class="name">
+            <i>Aiden2014</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Windows%E7%89%88"><span class="toc-text">Windows版</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E8%AE%A2%E9%98%85%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-text">选择订阅（推荐）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android%E7%89%88%EF%BC%88%E6%9C%89%E7%A9%BA%E5%86%8D%E6%9B%B4%E6%96%B0%EF%BC%89"><span class="toc-text">Android版（有空再更新）</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i>  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        v2ray使用教程
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2023-03-17 19:01:10</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#v2ray" title="v2ray">v2ray</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>本文只展示Windows版本和Android版本的演示。</p>
+<h1 id="Windows版"><a href="#Windows版" class="headerlink" title="Windows版"></a>Windows版</h1><p>1.先去GitHub下载对应的版本：<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">Releases · 2dust&#x2F;v2rayN (github.com)</a>，请注意看里面的说明。本文演示的版本为V6.18。</p>
+<p>2.下载好后解压文件夹，解压的位置不能选择在如C:\Program Files这种需要管理员权限的位置，因为解压到这些位置会有打不开的bug。不知道之后的版本会不会修复。</p>
+<p>3.解压好之后打开v2rayN.exe（最好右键以管理员身份运行）。这时候你有两种选择。</p>
+<h2 id="选择订阅（推荐）"><a href="#选择订阅（推荐）" class="headerlink" title="选择订阅（推荐）"></a>选择订阅（推荐）</h2><p>1.点击上面那一栏的订阅分组-&gt;订阅分组设置-&gt;添加。</p>
+<div  align="center">
+    <img src="/img/v2ray使用教程/v2ray使用教程1.jpg" />
+</div>
+
+
+
+<div  align="center">
+    <img src="/img/v2ray使用教程/v2ray使用教程2.jpg" />
+</div>
+
+<p>2.别名随便取一个，可选地址我找了一些订阅链接，也可以选择你自己找到的订阅地址（如在<a target="_blank" rel="noopener" href="https://github.com/">github.com</a>搜索v2ray，然后Sort选择Recently updated），之后自己慢慢找，另一个方法同理。其他的可以暂时不用填。</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free</span><br><span class="line">https://raw.githubusercontent.com/ssrsub/ssr/master/V2Ray</span><br><span class="line">https://9527521.xyz/pubconfig/5jJlofW2hzG8krXU</span><br></pre></td></tr></table></figure>
+
+<p>3.添加完成后回到软件主界面，点击订阅分组-&gt;更新全部订阅（不通过代理）然后等待下方信息栏出现配置成功。</p>
+<div  align="center">
+    <img src="/img/v2ray使用教程/v2ray使用教程3.jpg" />
+</div>
+
+<p>4.按快捷键Ctrl+A全选服务器，然后右键，选择测试服务器真链接延迟（多选）（Ctrl+R），测试延迟。</p>
+<div  align="center">
+    <img src="/img/v2ray使用教程/v2ray使用教程4.jpg" />
+</div>
+
+<p>5.在每个节点的最右边都会显示延迟。如果想要快速找到低延迟节点，则点击一下 延迟 来排序。鼠标选择好节点后按Enter键勾选。</p>
+<div  align="center">
+    <img src="/img/v2ray使用教程/v2ray使用教程5.jpg" />
+</div>
+
+<p>6.在任务栏找到v2ray并右键，建议选择自动配置系统代理。然后就可以科学上网了。</p>
+<div  align="center">
+    <img src="/img/v2ray使用教程/v2ray使用教程6.jpg" />
+</div>
+
+<h1 id="Android版（有空再更新）"><a href="#Android版（有空再更新）" class="headerlink" title="Android版（有空再更新）"></a>Android版（有空再更新）</h1>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/Aiden2014">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="Aiden2014/comment-of-blog"
+    data-repo-id="R_kgDOJI4jAQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOJI4jAc4CU1wC"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>
