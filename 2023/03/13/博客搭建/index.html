@@ -273,9 +273,9 @@
 <p>​	打开<code>\_config.yml</code>，加上</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subtitle: &quot;你的座右铭&quot;</span><br></pre></td></tr></table></figure>
 
-<h1 id="2023-5-15更新用维格作为图床403Forbidden问题"><a href="#2023-5-15更新用维格作为图床403Forbidden问题" class="headerlink" title="2023.5.15更新用维格作为图床403Forbidden问题"></a>2023.5.15更新用维格作为图床403Forbidden问题</h1><p>前几天上博客看了下，图片都是403Forbidden，估计是维格那边的政策变了。于是找了解决方法。</p>
-<p>打开<code>\themes\hexo-theme-aircloud\layout\_partial\head.ejs</code>，在几行meta之间加上</p>
-<meta name="referrer" content="no-referrer" />
+<h1 id="2023-5-15更新用维格作为图床403Forbidden问题"><a href="#2023-5-15更新用维格作为图床403Forbidden问题" class="headerlink" title="2023.5.15更新用维格作为图床403Forbidden问题"></a>2023.5.15更新用维格作为图床403Forbidden问题</h1><p>前几天上博客看了下，图片都是403Forbidden，估计是维格那边的政策变了。于是找了解决方法。 </p>
+<p>打开<code>\themes\hexo-theme-aircloud\layout\_partial\head.ejs</code>，在几行meta之间加上 </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;referrer&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-referrer&quot;</span> /&gt;</span>   </span><br></pre></td></tr></table></figure>
 
 <p><img src="https://s1.vika.cn/space/2023/05/15/f63f00fb35204eda9765d2646c46e287" alt="image-20230515160307762"></p>
 <p>然后再部署就正常了</p>
