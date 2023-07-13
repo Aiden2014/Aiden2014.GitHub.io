@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <meta name="referrer" content="no-referrer" />
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        开发流程 - Aiden2014
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Keep on keeping on </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="https://s1.vika.cn/space/2023/03/19/eadf46b16744446ab4afce005ac2bc84" class="js-avatar show" />
+        </div>
+        <div class="name">
+            <i>Aiden2014</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">传统瀑布模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-text">优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91"><span class="toc-text">敏捷开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SAFe%E6%A1%86%E6%9E%B6-The-Scaled-Agile-Framework"><span class="toc-text">SAFe框架(The Scaled Agile Framework)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E8%A6%81%E7%B4%A0"><span class="toc-text">关键要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E6%B5%81%E7%A8%8B"><span class="toc-text">传统流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E9%98%B6%E6%AE%B5"><span class="toc-text">需求阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#MVP%EF%BC%88minimum-viable-product%EF%BC%8C%E6%9C%80%E5%B0%8F%E5%8C%96%E5%8F%AF%E8%A1%8C%E4%BA%A7%E5%93%81%EF%BC%89%E6%80%9D%E6%83%B3"><span class="toc-text">MVP（minimum viable product，最小化可行产品）思想</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%9B%E8%B1%A1%E9%99%90%E6%B3%95"><span class="toc-text">四象限法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E9%98%B6%E6%AE%B5"><span class="toc-text">开发阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%91%E5%8E%9F%E7%94%9F"><span class="toc-text">云原生</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="toc-text">容器化</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6"><span class="toc-text">微服务框架</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BA%91%E5%8E%9F%E7%94%9FIDE"><span class="toc-text">云原生IDE</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Git%E5%A4%84%E7%90%86%E5%86%B2%E7%AA%81"><span class="toc-text">Git处理冲突</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E3%80%81%E8%87%AA%E6%B5%8B%E5%92%8C%E6%96%87%E6%A1%A3"><span class="toc-text">有代码规范、自测和文档</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5"><span class="toc-text">测试阶段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E9%98%B6%E6%AE%B5"><span class="toc-text">发布阶段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E7%BB%B4%E9%98%B6%E6%AE%B5"><span class="toc-text">运维阶段</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Keep on keeping on </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        开发流程
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2023-06-07 21:15:29</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#开发" title="开发">开发</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="传统瀑布模型"><a href="#传统瀑布模型" class="headerlink" title="传统瀑布模型"></a>传统瀑布模型</h1><p>需求-&gt;开发-&gt;测试-&gt;发布-&gt;运维</p>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>1.工作流程直观表达</p>
+<p>2.定义了标准的研发阶段</p>
+<p>3.以流程为本，理想化模型</p>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>流程低效：工作定死，到一定时间做一定的事情，很多时间都是等前面的流程完成</p>
+<h1 id="敏捷开发"><a href="#敏捷开发" class="headerlink" title="敏捷开发"></a>敏捷开发</h1><h2 id="SAFe框架-The-Scaled-Agile-Framework"><a href="#SAFe框架-The-Scaled-Agile-Framework" class="headerlink" title="SAFe框架(The Scaled Agile Framework)"></a>SAFe框架(The Scaled Agile Framework)</h2><p>SAFe框架包括一系列的角色、活动、工件和指南，它们共同协调和协作以支持大规模的敏捷开发。</p>
+<h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>是帮助组织在复杂的环境中有效地交付高质量的软件，同时保持敏捷的原则和价值观。</p>
+<h3 id="关键要素"><a href="#关键要素" class="headerlink" title="关键要素"></a>关键要素</h3><ol>
+<li>Agile Release Train（ART）：ART是SAFe中的核心组织单位，它是一个跨职能、跨团队的组织，负责按照迭代和发布计划交付价值。ART通常由多个敏捷团队组成，这些团队共同协作开发和交付软件。</li>
+<li>PI Planning（Program Increment Planning）：PI Planning是一个全体会议，ART的成员在这个会议上共同规划一个固定时间段（通常为8-12周）的开发工作。在这个会议上，团队制定目标、排列工作项、解决依赖关系，并制定一个可执行的计划。</li>
+<li>精确的迭代：SAFe使用基于时间盒的迭代模型，称为精确的迭代。每个迭代通常持续1-2周，团队在每个迭代中交付可工作的软件增量。</li>
+<li>PI演示（PI Demo）：每个PI结束时，ART举行一个PI演示，向利益相关方展示所完成的工作。这有助于实现透明度和共享进展，以便及早获取反馈并进行调整。</li>
+<li>Continuous Delivery Pipeline（持续交付流水线）：SAFe提倡建立一条持续交付流水线，以自动化软件交付的过程。这包括开发、集成、测试和部署等环节，以提高交付速度和质量。</li>
+</ol>
+<h3 id="传统流程"><a href="#传统流程" class="headerlink" title="传统流程"></a>传统流程</h3><h4 id="需求阶段"><a href="#需求阶段" class="headerlink" title="需求阶段"></a>需求阶段</h4><h5 id="MVP（minimum-viable-product，最小化可行产品）思想"><a href="#MVP（minimum-viable-product，最小化可行产品）思想" class="headerlink" title="MVP（minimum viable product，最小化可行产品）思想"></a>MVP（minimum viable product，最小化可行产品）思想</h5><p>1.站在用户的角度考虑</p>
+<p>2.收集用户反馈，快速迭代</p>
+<h5 id="四象限法"><a href="#四象限法" class="headerlink" title="四象限法"></a>四象限法</h5><ol>
+<li>第一象限：重要且紧急的任务（Important and Urgent）：需要专注于这些任务，并尽快完成它们。</li>
+<li>第二象限：重要但不紧急的任务（Important but Not Urgent）：这个象限通常被认为是最重要的象限，因为它能够帮助你避免被紧急任务所主导。</li>
+<li>第三象限：不重要但紧急的任务（Not Important but Urgent）：需要尽量减少这些任务，或者将它们委派给其他人。</li>
+<li>第四象限：不重要且不紧急的任务（Not Important and Not Urgent）：需要避免过度投入这些任务，以免浪费时间和资源。</li>
+</ol>
+<h4 id="开发阶段"><a href="#开发阶段" class="headerlink" title="开发阶段"></a>开发阶段</h4><h5 id="云原生"><a href="#云原生" class="headerlink" title="云原生"></a>云原生</h5><h6 id="容器化"><a href="#容器化" class="headerlink" title="容器化"></a>容器化</h6><p>所有容器共享宿主机的系统，部署的时候，应用和其依赖的操作系统打包成镜像，后端开发不依赖运维创建程序的运行时环境。</p>
+<h6 id="微服务框架"><a href="#微服务框架" class="headerlink" title="微服务框架"></a>微服务框架</h6><p>各个功能在不同服务中，不同模块需要RPC通信，可以独立扩缩容，每个服务的代码仓库仅由少部分人维护。</p>
+<h6 id="云原生IDE"><a href="#云原生IDE" class="headerlink" title="云原生IDE"></a>云原生IDE</h6><h5 id="Git处理冲突"><a href="#Git处理冲突" class="headerlink" title="Git处理冲突"></a>Git处理冲突</h5><h5 id="有代码规范、自测和文档"><a href="#有代码规范、自测和文档" class="headerlink" title="有代码规范、自测和文档"></a>有代码规范、自测和文档</h5><h4 id="测试阶段"><a href="#测试阶段" class="headerlink" title="测试阶段"></a>测试阶段</h4><p><img src="https://s1.vika.cn/space/2023/06/07/a2343adb0f114605b85b2601f1f6ecb2" alt="img"></p>
+<p>需要进行充分的单元测试</p>
+<p>一般至少需要三套环境：</p>
+<p>功能环境：开发和测试新开发的功能</p>
+<p>集成环境：把不同的功能合并在一起测试</p>
+<p>回归环境：验证新的功能对老功能没有影响</p>
+<h4 id="发布阶段"><a href="#发布阶段" class="headerlink" title="发布阶段"></a>发布阶段</h4><p>没有强大发布系统和服务器资源不足的公司一般使用蛮力发布或者金丝雀发布</p>
+<p>有强大发布工具和服务器资源充足的公司一般使用滚动发布和蓝绿发布</p>
+<h4 id="运维阶段"><a href="#运维阶段" class="headerlink" title="运维阶段"></a>运维阶段</h4><p>有监控日志和报警的平台</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/Aiden2014">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="Aiden2014/comment-of-blog"
+    data-repo-id="R_kgDOJI4jAQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOJI4jAc4CU1wC"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>

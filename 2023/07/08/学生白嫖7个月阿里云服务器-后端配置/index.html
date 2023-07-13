@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <meta name="referrer" content="no-referrer" />
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        学生白嫖7个月阿里云服务器+后端配置 - Aiden2014
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Keep on keeping on </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="https://s1.vika.cn/space/2023/03/19/eadf46b16744446ab4afce005ac2bc84" class="js-avatar show" />
+        </div>
+        <div class="name">
+            <i>Aiden2014</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%99%BD%E5%AB%96%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">白嫖阿里云服务器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE"><span class="toc-text">后端配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8D%A2%E6%BA%90%EF%BC%88%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%BB%98%E8%AE%A4%E6%8D%A2%E5%A5%BD%E4%BA%86%E9%98%BF%E9%87%8C%E7%9A%84%E9%95%9C%E5%83%8F%EF%BC%8C%E6%89%80%E4%BB%A5%E4%B8%8D%E7%94%A8%E6%8D%A2%E4%B9%9F%E8%A1%8C%EF%BC%89"><span class="toc-text">换源（阿里云服务器默认换好了阿里的镜像，所以不用换也行）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6"><span class="toc-text">查看已安装软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%90%8E%E7%AB%AF%E9%9C%80%E8%A6%81%E7%9A%84%E4%B8%9C%E8%A5%BF"><span class="toc-text">安装后端需要的东西</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%8F%E6%AC%A1%E5%AE%89%E8%A3%85%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%89%8D%E9%83%BD%E8%A6%81%E7%A1%AE%E4%BF%9D%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E6%98%AF%E6%9C%80%E6%96%B0%E7%9A%84"><span class="toc-text">每次安装新软件前都要确保当前系统是最新的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85JDK17"><span class="toc-text">安装JDK17</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Maven"><span class="toc-text">安装Maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Tomcat"><span class="toc-text">安装Tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85MariaDB%EF%BC%88%E6%9B%BF%E4%BB%A3MySQL%EF%BC%89"><span class="toc-text">安装MariaDB（替代MySQL）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Redis"><span class="toc-text">安装Redis</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8jar%E5%8C%85%E5%8F%91%E9%80%81%E7%BB%99%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C"><span class="toc-text">用jar包发送给服务器运行</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Keep on keeping on </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        学生白嫖7个月阿里云服务器+后端配置
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2023-07-08 13:46:06</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#后端" title="后端">后端</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="白嫖阿里云服务器"><a href="#白嫖阿里云服务器" class="headerlink" title="白嫖阿里云服务器"></a>白嫖阿里云服务器</h1><p>1.进入<a target="_blank" rel="noopener" href="https://developer.aliyun.com/plan/student">高校计划 - 免费学生云服务器 (aliyun.com)</a>，按照提示注册登录领取。在此过程中，还能学习一些阿里云ECS基本操作。</p>
+<p>2.在配置服务器时，选择离自己最近的地域，系统我选择Debian  11.7 64位。</p>
+<h1 id="后端配置"><a href="#后端配置" class="headerlink" title="后端配置"></a>后端配置</h1><h2 id="换源（阿里云服务器默认换好了阿里的镜像，所以不用换也行）"><a href="#换源（阿里云服务器默认换好了阿里的镜像，所以不用换也行）" class="headerlink" title="换源（阿里云服务器默认换好了阿里的镜像，所以不用换也行）"></a>换源（阿里云服务器默认换好了阿里的镜像，所以不用换也行）</h2><p>查看源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+
+<p>以<code>deb</code>或<code>deb-src</code>开头，后跟源的地址。</p>
+<h2 id="查看已安装软件"><a href="#查看已安装软件" class="headerlink" title="查看已安装软件"></a>查看已安装软件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt list --installed</span><br></pre></td></tr></table></figure>
+
+<p>可以看到java后端需要的都没装</p>
+<h2 id="安装后端需要的东西"><a href="#安装后端需要的东西" class="headerlink" title="安装后端需要的东西"></a>安装后端需要的东西</h2><h3 id="每次安装新软件前都要确保当前系统是最新的"><a href="#每次安装新软件前都要确保当前系统是最新的" class="headerlink" title="每次安装新软件前都要确保当前系统是最新的"></a>每次安装新软件前都要确保当前系统是最新的</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装JDK17"><a href="#安装JDK17" class="headerlink" title="安装JDK17"></a>安装JDK17</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openjdk-17-jdk</span><br></pre></td></tr></table></figure>
+
+<p>安装好后可以通过下面命令查看安装情况</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装Maven"><a href="#安装Maven" class="headerlink" title="安装Maven"></a>安装Maven</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install maven</span><br></pre></td></tr></table></figure>
+
+<p>查看安装情况</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install tomcat9</span><br></pre></td></tr></table></figure>
+
+<p>查看安装情况</p>
+<p>1.查看并记住自己电脑的公网ip，可通过这个网站查询<a target="_blank" rel="noopener" href="http://www.ip138.com/">www.ip138.com</a></p>
+<p>2.打开阿里云的云服务器ECS管理平台-&gt;选择自己那台服务器-&gt;安全组-&gt;配置规则</p>
+<p><img src="https://s1.vika.cn/space/2023/07/08/e7104a21600b4f92a9fbe77bc763abe6" alt="image-20230708153022339"></p>
+<p>3.手动添加-&gt;按照图示设置，授权对象是自己的公网ip-&gt;保存</p>
+<p><img src="https://s1.vika.cn/space/2023/07/08/e280671b49db4b36a8a756fc684a1d6e" alt="image-20230708153642703"></p>
+<p>4.打开浏览器，输入自己的服务器ip地址:8080。（如192.168.1.1:8080，ip地址在实例那里可以看到）</p>
+<p><img src="https://s1.vika.cn/space/2023/07/08/4e14697d7a964138838cd63c06ce75f6" alt="image-20230708154120236"></p>
+<p>5.显示这个界面就是成功安装tomcat</p>
+<p><img src="https://s1.vika.cn/space/2023/07/08/4d413f5693ae43fdaf463d0e58d0a1a7" alt="image-20230708154229236"></p>
+<h3 id="安装MariaDB（替代MySQL）"><a href="#安装MariaDB（替代MySQL）" class="headerlink" title="安装MariaDB（替代MySQL）"></a>安装MariaDB（替代MySQL）</h3><p>参考<a target="_blank" rel="noopener" href="https://juejin.cn/post/7162821689133236261">如何在Debian 11上安装MariaDB - 掘金 (juejin.cn)</a></p>
+<h3 id="安装Redis"><a href="#安装Redis" class="headerlink" title="安装Redis"></a>安装Redis</h3><p>输入下面命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install redis</span><br></pre></td></tr></table></figure>
+
+<p>安装好默认启动Redis服务，可输入下面命令查看情况</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl status redis-server</span><br></pre></td></tr></table></figure>
+
+<h2 id="用jar包发送给服务器运行"><a href="#用jar包发送给服务器运行" class="headerlink" title="用jar包发送给服务器运行"></a>用jar包发送给服务器运行</h2><p>1.IDEA创建一个空项目，用maven依赖，并在<code>pom.xml</code>加上下面的配置。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.10.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-jar-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">archive</span>&gt;</span></span><br><span class="line">                       <span class="tag">&lt;<span class="name">manifest</span>&gt;</span></span><br><span class="line">                           <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>org.example.Main<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">                           <span class="comment">&lt;!-- 包含public static void main(String[] args)方法的类的位置 --&gt;</span></span><br><span class="line">                       <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br><span class="line">                   <span class="tag">&lt;/<span class="name">archive</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2.在IDEA终端运行下面的命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mvn clean</span><br><span class="line">mvn package</span><br></pre></td></tr></table></figure>
+
+<p>3.在项目的<code>target</code>里面就存放着<code>.jar</code>包，把他拖到ECS云助手那里（运维与监控-&gt;发送命令&#x2F;文件（云助手）-&gt;发送文件里面）</p>
+<p><img src="https://s1.vika.cn/space/2023/07/08/1ab5a21a3fd040cfb2a927b56fe35166" alt="image-20230708204043438"></p>
+<p>4.发送成功后服务器运行下面命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar 文件名.jar</span><br></pre></td></tr></table></figure>
+
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/Aiden2014">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="Aiden2014/comment-of-blog"
+    data-repo-id="R_kgDOJI4jAQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOJI4jAc4CU1wC"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>
