@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <meta name="referrer" content="no-referrer" />
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        本地无ipv6情况下玩转北邮人和bt - Aiden2014
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Keep on keeping on </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="https://s1.vika.cn/space/2023/03/19/eadf46b16744446ab4afce005ac2bc84" class="js-avatar show" />
+        </div>
+        <div class="name">
+            <i>Aiden2014</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-text">背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BC%98%E5%8A%A3%E5%AF%B9%E6%AF%94"><span class="toc-text">方案优劣对比</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%8A%82%E7%82%B9%E4%BB%A3%E7%90%86"><span class="toc-text">使用机场节点代理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-text">优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%B7%B1%E8%B4%AD%E4%B9%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">自己购买云服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9-1"><span class="toc-text">优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9-1"><span class="toc-text">缺点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%99%E7%A8%8B"><span class="toc-text">教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%9C%BA%E5%9C%BA%E8%8A%82%E7%82%B9%E4%BB%A3%E7%90%86-1"><span class="toc-text">使用机场节点代理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v2rayn%E8%AE%BE%E7%BD%AE"><span class="toc-text">v2rayn设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#qBittorrent-x2F-utorrent%E8%AE%BE%E7%BD%AE%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">qBittorrent&#x2F;utorrent设置（可选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E8%A7%84%E5%88%99"><span class="toc-text">路由规则</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%B7%B1%E8%B4%AD%E4%B9%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-1"><span class="toc-text">自己购买云服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-1"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE"><span class="toc-text">服务器设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9socks5%E4%BB%A3%E7%90%86"><span class="toc-text">选择socks5代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vmess-ws"><span class="toc-text">vmess+ws</span></a></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Keep on keeping on </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        本地无ipv6情况下玩转北邮人和bt
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2024-01-31 18:23:21</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#ipv6 bt pt 北邮人" title="ipv6 bt pt 北邮人">ipv6 bt pt 北邮人</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>本人用的是广东广电100M宽带，而广电到2024年了还没有分配IPv6。最近我被拉入玩pt和bt的坑，想要访问北邮人pt并从北邮人下载和上传资源，并且同时想要兼顾科学上网，所以这篇教程就诞生了。</p>
+<p>本教程有两种方案，一个是自己购买云服务器使用，一个是使用机场的节点代理。两种方案各有优劣。</p>
+<h1 id="方案优劣对比"><a href="#方案优劣对比" class="headerlink" title="方案优劣对比"></a>方案优劣对比</h1><p>可以根据对比之后选择合适自己的再看对应的教程，或者两种方案都做了，有一些步骤是重复的</p>
+<h2 id="使用机场节点代理"><a href="#使用机场节点代理" class="headerlink" title="使用机场节点代理"></a>使用机场节点代理</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
+<li>方便快捷</li>
+<li>性价比比较高</li>
+</ol>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
+<li>不能自由选择配置</li>
+<li>有些机场会把bt流量给封锁了，就算没有封锁，也最好别直接拿来下载bt，除非机场明确说明（一般这种机场会很贵），不然可能会进机场黑名单。不过pt倒不用怕，没有蜜罐，而且机场一般也没有封锁pt流量</li>
+<li>现在的机场一般不会说自己有没有IPv6，有一些有，有一些没有，没有IPv6的无法访问北邮人</li>
+<li>流量一般都是有限的，拿来跑下载上传可能会不够用</li>
+</ol>
+<h2 id="自己购买云服务器"><a href="#自己购买云服务器" class="headerlink" title="自己购买云服务器"></a>自己购买云服务器</h2><h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3><ol>
+<li>可以相对自由地选择配置</li>
+<li>选择抗<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DCMA</a>的服务器可以随便下载bt，不怕投诉。不过感觉如果不是随便找torrent的话，不专门选抗投诉的服务器应该没啥问题，至少我使用了几天后都没啥问题</li>
+<li>选择不限流量的服务器还可以随便刷流量</li>
+<li>可以选择能跑满家宽的千兆网速服务器</li>
+<li>选了大储存的服务器还能直接在服务器刷pt流量，不用自己本地开机</li>
+</ol>
+<h3 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h3><ol>
+<li>麻烦</li>
+<li>想要好的服务器，价格可能会贵一些</li>
+</ol>
+<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="使用机场节点代理-1"><a href="#使用机场节点代理-1" class="headerlink" title="使用机场节点代理"></a>使用机场节点代理</h2><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>一个代理软件。本文使用的是v2rayn V6.33版本，并且会详解。clash系列的可以参考，应该大差不差</p>
+<p>有IPv6的机场</p>
+<h3 id="v2rayn设置"><a href="#v2rayn设置" class="headerlink" title="v2rayn设置"></a>v2rayn设置</h3><p>不知道是什么原因，使用系统代理模式的时候，无论我怎么设置，qBittorrent和utorrent都可以与tracker连接但是无法与peers连接。后来我研究tun模式并设置了下，最终能够正常下载pt和bt。所以本文选择的是tun模式</p>
+<p>要以管理员身份运行才能开启v2rayn的tun模式，在v2rayn的主页面的下方开启，同时系统代理选择<strong>清除系统代理</strong></p>
+<p>在v2rayn上方点设置-&gt;参数设置-&gt;开启UDP和流量探测</p>
+<p><img src="https://s1.vika.cn/space/2024/01/31/5634fe53e7164c7684c2c7fcdbf22002" alt="image-20240131204506473"></p>
+<p>Tun模式设置-&gt;启用IPv6</p>
+<p><img src="https://s1.vika.cn/space/2024/01/31/b34d0ab9f67143eeac9a85999a6e1d06" alt="image-20240131205303448"></p>
+<p>退到v2rayn主页面，在v2rayn上方点设置-&gt;路由设置-&gt;启用高级功能。域名解析策略选择AsIs。</p>
+<p><img src="https://s1.vika.cn/space/2024/01/31/62082ec0e8df4c5e9454e63ca8e2594c" alt="image-20240131210253874"></p>
+<p>高级功能-&gt;添加规则集-&gt;别名随便取一个（本文取IPv6）。复制下面这段json配置后到v2rayn页面选择从粘贴板中导入规则。弹出是否追加规则的页面，这里随便选是或者否都可以。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;proxy&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;ip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;domain:byr.pt&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;process&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;proxy&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;ip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;protocol&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;bittorrent&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;process&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;direct&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;ip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;geoip:private&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;process&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;proxy&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;ip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;::/128&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;process&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;block&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;geosite:category-ads-all&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;direct&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;ip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;geosite:cn&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;process&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;direct&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;ip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;geoip:cn&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;domain&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;process&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0-65535&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;outboundTag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;proxy&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;enabled&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.vika.cn/space/2024/01/31/78c3ba8bc86d489a92a5c657566085d1" alt="image-20240131211321631"></p>
+<p>确定并且选中这个规则集列表后按enter键，之后点确定</p>
+<p><img src="https://s1.vika.cn/space/2024/01/31/8a21e74d0d3048b0bc63dd30b060b396" alt="image-20240131220049741"></p>
+<p>回到v2rayn主页面-&gt;设置-&gt;DNS设置-&gt;sing-box DNS设置-&gt;点击导入默认DNS配置-&gt;把下面的json配置复制后粘贴覆盖到右侧的Tun模式设置-&gt;确定</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;servers&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;tag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;remote&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;address&quot;</span><span class="punctuation">:</span> <span class="string">&quot;tcp://8.8.8.8&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;detour&quot;</span><span class="punctuation">:</span> <span class="string">&quot;proxy&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;strategy&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ipv4_only&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;tag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;local&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;address&quot;</span><span class="punctuation">:</span> <span class="string">&quot;223.5.5.5&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;detour&quot;</span><span class="punctuation">:</span> <span class="string">&quot;direct&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;strategy&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ipv4_only&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;tag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;block&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;address&quot;</span><span class="punctuation">:</span> <span class="string">&quot;rcode://success&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;tag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ipv6&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;address&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2606:4700:4700::1111&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;detour&quot;</span><span class="punctuation">:</span> <span class="string">&quot;proxy&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;rules&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;domain_suffix&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;byr.pt&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;server&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ipv6&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;disable_cache&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;geosite&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;cn&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;server&quot;</span><span class="punctuation">:</span> <span class="string">&quot;local&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;disable_cache&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;geosite&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;category-ads-all&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;server&quot;</span><span class="punctuation">:</span> <span class="string">&quot;block&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;disable_cache&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;strategy&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prefer_ipv4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.vika.cn/space/2024/01/31/6ce3280845604a7ba63a95aa508283df" alt="image-20240131220220658"></p>
+<h3 id="qBittorrent-x2F-utorrent设置（可选）"><a href="#qBittorrent-x2F-utorrent设置（可选）" class="headerlink" title="qBittorrent&#x2F;utorrent设置（可选）"></a>qBittorrent&#x2F;utorrent设置（可选）</h3><p>按照北邮人的常见问题里面的配置就行了，qBittorrent的话可以选择绑定singbox_tun网卡（在设置-&gt;高级-&gt;网络接口选择singbox_tun）。最主要就是要注意客户端有没有开启IPv6。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>到这里，如果只是想抄作业的话，接下来的原理就不需要看了。用了这套配置，基本上访问大部分的互联网内容都没啥问题（除了一些比较小的站点）。如果访问国内网站有问题，就手动关掉tun模式或者退出v2rayn；如果访问国外网站有问题，就把路由从原来的（本文名为IPv6的那个）改成全局代理就行了。但是如果你想有更高级的用法，或者觉得每次访问有问题的网站时把代理且来切去这样很麻烦，请先去学习理解v2rayn的路由策略、tun模式的工作原理和一些基础的计算机网络知识，然后在我的基础配置上修改。下面是推荐的参考资料。</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_618At72evs">节点搭建系列(1)：网络通信的基本过程，访问网站到底发生了什么事情？详细解析DNS原理</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=qItL005LUik">【进阶•代理模式篇】看懂就能解决99%的代理问题，详解系统代理、TUN&#x2F;TAP代理、真VPN代理，clash&#x2F;v2ray&#x2F;singbox 虚拟网卡怎么接管系统全局流量？什么是真正的VPN？看完就知道了</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=50iVDmqzDW8">【进阶•DNS代理篇】最完美的DNS解决方案？通过代理DNS请求获取正确的ip，杜绝DNS泄露和DNS污染，解决透明代理下fake-ip存在的问题，开启sniffing流量嗅探亦可解决污染问题</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.v2fly.org/config/routing.html">v2rayn Routing 路由官方文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://sing-box.sagernet.org/zh/configuration/dns/">sing-box官方文档 DNS</a></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>接下来我来讲讲我这么配置的思路，先从相对简单的路由开始。</p>
+<h4 id="路由规则"><a href="#路由规则" class="headerlink" title="路由规则"></a>路由规则</h4><p>我是在原有的绕过大陆模式下来添加修改的。把domain为<code>domain:byr.pt</code>和protocol为<code>bittorrent</code>放在最前面经过proxy代理。接着本地ip（如<code>127.0.0.1</code>、<code>::1</code>等）直连。然后<code>::/128</code>指所有过滤了本地IPv6后所有IPv6都经过代理。倒数第二个才放所有的大陆的ip地址。这样就可以在访问国内网站时使用IPv4。</p>
+<p>然而如果不配合sing-box的DNS修改的话，实际上是访问不了IPv6的。因为默认DNS的strategy为ipv4_only。如果只是简单地改成prefer_ipv4的话，仍然有不少问题。在访问同时支持IPv4和IPv6的国内的部分网站时，由于IPv4和IPv6的地区不同，所以会出现奇奇怪怪的问题，比如资源加载有问题，严重的话连网页都进不去；在访问同时支持IPv4和IPv6的国外的部分网站时（比如谷歌），不知道是我IPv6的问题还是啥，很容易被识别为异常流量，弹出烦人的谷歌验证。</p>
+<p>为了解决这个问题，所以还需要在原有的配置上添加IPv6的dns服务器，其他dns服务器都是IPv4 only。路由设置成除了byr.pt只使用IPv6来做DNS查询，其他都是用IPv4查询DNS访问，这样就没有问题了。</p>
+<p>有了上面的思路解释，遇到问题就会根据这个思路来修改我的配置了。</p>
+<h2 id="自己购买云服务器-1"><a href="#自己购买云服务器-1" class="headerlink" title="自己购买云服务器"></a>自己购买云服务器</h2><h3 id="准备工作-1"><a href="#准备工作-1" class="headerlink" title="准备工作"></a>准备工作</h3><p>一台同时有公网IPv4和IPv6的服务器，带宽最好是比自己带宽高的，我这里选1000Mbps够用了，同时每月流量越大越好，无限流量最好。这里我选择了buyvm的拉斯维加斯服务器，个人感觉性价比挺高的。</p>
+<p>一个代理软件（可选）。本文使用的是v2rayn，并且会详解。clash系列的可以参考，应该大差不差。</p>
+<h3 id="服务器设置"><a href="#服务器设置" class="headerlink" title="服务器设置"></a>服务器设置</h3><p>使用x-ui面板来配置，十分简单，可以参考下面的教程。有两种方案，一种是选择vmess+ws（需要代理软件），一种是原生socks5（简单，因为没有加密传输，所以理论上相对较快，不需要代理软件，服务器没啥重要信息的话可以选择，安装如图所示设置即可）。</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=SpxTFes1B8U">【零基础】最新保姆级纯小白节点搭建教程，人人都能学会，目前最简单、最安全、最稳定的专属节点搭建方法，手把手自建节点搭建教学，晚高峰高速稳定，4K秒开的科学上网线路体验</a></p>
+<p><img src="https://s1.vika.cn/space/2024/01/31/0aedcf8bcb924061ba9c31da0d8406fa" alt="image-20240131233246483"></p>
+<p>点击左侧的面板设置-&gt;xray 相关设置，把过滤掉bittorrent的rules规则清除掉，保存配置后重启面板。</p>
+<h3 id="选择socks5代理"><a href="#选择socks5代理" class="headerlink" title="选择socks5代理"></a>选择socks5代理</h3><p>在qBittorrent设置-&gt;连接，按照如图所示设置即可，修改端口、ip、用户名、密码</p>
+<p><img src="https://s1.vika.cn/space/2024/01/31/9e85bfa8e40e4085b9fb70c3a2f59b9e" alt="image-20240131233938346"></p>
+<p>然后就行了</p>
+<h3 id="vmess-ws"><a href="#vmess-ws" class="headerlink" title="vmess+ws"></a>vmess+ws</h3><p>参考上面那个视频将节点导入到v2rayn。之后的步骤就和<a href="###v2rayn%E8%AE%BE%E7%BD%AE">使用机场节点代理的v2rayn设置</a>一样了。</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/Aiden2014">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://blog.love98.net">Love98</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://lifeng.dev">LiFeng</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://rdququ.top">QuQu</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://miomiomio.fun">mio</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://nkid00.name">NKID00</a></span>
+        <span>/</span>
+        
+        <span><a href="www.yumoyumo.top">yumo</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://nuotian.furry.pro">NuoTian</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://windpo.top">windpo</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://mxte.cc">MaxtuneLee</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://blog.fooo.in">xun</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="Aiden2014/comment-of-blog"
+    data-repo-id="R_kgDOJI4jAQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOJI4jAc4CU1wC"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>
