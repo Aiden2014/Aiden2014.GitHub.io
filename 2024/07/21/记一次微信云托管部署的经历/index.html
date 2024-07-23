@@ -112,7 +112,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-text">起因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%91%E7%81%AB"><span class="toc-text">救火</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91"><span class="toc-text">第一个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%9D%91"><span class="toc-text">第二个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%9D%91"><span class="toc-text">第三个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E4%B8%AA%E5%9D%91"><span class="toc-text">第四个坑</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-text">起因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%91%E7%81%AB"><span class="toc-text">救火</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%9D%91"><span class="toc-text">第一个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%9D%91"><span class="toc-text">第二个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%9D%91"><span class="toc-text">第三个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E4%B8%AA%E5%9D%91"><span class="toc-text">第四个坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E4%B8%AA%E5%9D%91"><span class="toc-text">第五个坑</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol>
 </div>
     
 </div>
@@ -165,8 +165,8 @@
         <p>本篇文章主要内容是记录一次微信云托管的经历，以及踩过的一些坑。</p>
 <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>当时我在吃午饭，突然收到连续的两条微信服务通知</p>
 <p><img src="https://s1.vika.cn/space/2024/07/21/3c5240749a834338be3348ddccee254b" alt="image-20240721212414326"></p>
-<p>直接把微信云托管的实例啥的都给删地一干二净了！后面问老板才知道原来已经欠费好一段时间了，不过只有删的时候才有微信通知。这是我想吐槽微信开发的第一个点。</p>
-<h1 id="救火"><a href="#救火" class="headerlink" title="救火"></a>救火</h1><p>删地一干二净，那只能充钱后从零开始部署了。这个云托管对应的小程序是 21 年的时候学长开发的，现在服务端主要是由我来维护和开发新功能。所以，重新部署的事情就交给我了。</p>
+<p>直接把微信云托管的实例啥的都给删得一干二净了！后面问老板才知道原来已经欠费好一段时间了，不过只有删的时候才有微信通知。这是我想吐槽微信开发的第一个点。</p>
+<h1 id="救火"><a href="#救火" class="headerlink" title="救火"></a>救火</h1><p>删得一干二净，那只能充钱后从零开始部署了。这个云托管对应的小程序是 21 年的时候学长开发的，现在服务端主要是由我来维护和开发新功能。所以，重新部署的事情就交给我了。</p>
 <p>原来云托管出口固定 ip 是免费的，但是我们重新部署的时候就要钱了。</p>
 <p><img src="https://s1.vika.cn/space/2024/07/21/e05ad1f70141457db6ac6aba9fac9808" alt="image-20240721221010118"></p>
 <h2 id="第一个坑"><a href="#第一个坑" class="headerlink" title="第一个坑"></a>第一个坑</h2><p>根据 <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/minigame/dev/wxcloudrun/src/development/call/mini.html">微信小程序-访问云托管服务</a> 这篇文档，我没有搞清楚云托管和小程序的关系，也没有认真阅读 A 和 B 是小程序或者公众号，以为需要添加资源资源复用，卡了一会之后才知道本身云托管和小程序关联了后就不需要加资源复用了。</p>
@@ -180,6 +180,11 @@
 <p><img src="https://s1.vika.cn/space/2024/07/21/dcced48bf0ad4475a76bb20bb2605728" alt="1b1134b1c64686586f2f49a9e72d232"></p>
 <h2 id="第四个坑"><a href="#第四个坑" class="headerlink" title="第四个坑"></a>第四个坑</h2><p>虽然这似乎恢复了大部分业务，但是小程序端请求服务端的云调用报<code>502 Bad Gateway URL不在白名单内，请前往「微信云托管控制台-服务管理-云调用-微信令牌」配置</code>错误。我去到配置那里，发现前端已经填了一些服务端的接口（注意是服务端不是云调用的接口！）。我就跟着填了下其他服务端接口，发现还是不行。于是在 <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloudrun/src/guide/weixin/token.html#%E9%85%8D%E7%BD%AE%E4%BA%91%E8%B0%83%E7%94%A8%E6%9D%83%E9%99%90">配置云调用权限</a> 文档里面找才发现不应该填服务端的接口而是填云调用的接口。</p>
 <p><img src="https://s1.vika.cn/space/2024/07/21/6636011ceb92496a85edf2ea38789848" alt="image-20240721231103236"></p>
+<h2 id="第五个坑"><a href="#第五个坑" class="headerlink" title="第五个坑"></a>第五个坑</h2><p>当我以为这就完事后，发现微信登录的请求又报新的错。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [text/plain;charset=utf-8]</span><br></pre></td></tr></table></figure>
+
+<p>本地 HTTPS 请求返回的 Headers 是 application&#x2F;json 没问题的，但是云调用返回的 Headers 是 text&#x2F;plain，而 Body 格式是 application&#x2F;json，即使指定 application&#x2F;json 也没用。搜了下，原来是微信云调用的 Headers 返回不规范，而且一直有这个问题。<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/community/develop/doc/00088e5987c4c8e1f4eaa9b4c5a400">你们小程序获取openid的请求返回格式是json头类型为text&#x2F;plain？大厂呢 丢人啊</a></p>
+<p>解决方法是，参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/kinginblue/article/details/52706155">RestTemplate 微信接口 text&#x2F;plain HttpMessageConverter</a> 追加 Converter 就行了。没想到我还有给微信擦屁股的一天。</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这次从发现删除到生产环境彻底恢复花了 2 天左右的时间。花了那么长时间的主要原因是我们都不够仔细地去阅读文档，次要原因我这几天都有其他事情去忙，还有一个原因就是我是全程远程在家救火而不是和老板和前端等及时线下交流，效率低。幸好由于这段时间是暑假，这个业务不是很多人用，所以小程序挂了的实际影响不是很大。</p>
 <p>希望这次事故我能够引以为戒，认真阅读文档，有问题及时线下交流。</p>
 
