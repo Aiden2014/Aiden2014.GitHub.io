@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <meta name="referrer" content="no-referrer" />
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        记一次UE4汉化 - Aiden2014
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Keep on keeping on </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="https://s1.vika.cn/space/2023/03/19/eadf46b16744446ab4afce005ac2bc84" class="js-avatar show" />
+        </div>
+        <div class="name">
+            <i>Aiden2014</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-text">起因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="toc-text">准备工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%8C%85"><span class="toc-text">解包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99"><span class="toc-text">报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%89%E5%8C%96%E7%9B%B8%E5%85%B3%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">汉化相关的文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BF%BB%E8%AF%91%E6%96%87%E6%9C%AC"><span class="toc-text">翻译文本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%AD%97%E4%BD%93"><span class="toc-text">修改字体</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%93%E5%8C%85"><span class="toc-text">打包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%A1%A5%E4%B8%81"><span class="toc-text">使用补丁</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%83%E5%BE%97"><span class="toc-text">心得</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Keep on keeping on </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        记一次UE4汉化
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2024-09-10 20:00:38</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#汉化 UE4 游戏" title="汉化 UE4 游戏">汉化 UE4 游戏</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>看到有人吹捧 The Gap，但是这游戏目前（2024年）还没有官方中文，而且因为太冷门所以目前还没有民间汉化，故想试一下，也简单体会下当年汉化组的艰辛。</p>
+<p>目前游戏还是原价，我等打折了再买完整版，现在就拿 demo 练手。</p>
+<h1 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h1><p>本文参考了<a target="_blank" rel="noopener" href="https://gbatemp.net/threads/how-to-unpack-and-repack-unreal-engine-4-files.531784/"> UE4 解压和打包教程</a>和B站逗逗米玩啊的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1PF411p7G4">视频</a>来练手的。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lehieugch68/UE4-Locres-Unpacker/releases/tag/1.0.0.0">UE4-Locres-Unpacker</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/binamelato/UnrealPakSwitch">UnrealPakSwitchv10</a></p>
+<p>UE4引擎（epic 客户端下载，The Gap 使用 UE 4.27.2 版本）</p>
+<p>Python3</p>
+<h1 id="解包"><a href="#解包" class="headerlink" title="解包"></a>解包</h1><h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><p>一开始把下载的 UE4 引擎里面的<code>Engine\Binaries\Win64</code>放到<code>UnrealPakSwitchv10\v11.27\2\3</code>下面，把 TheGap 游戏目录下的<code>TheGap\Content\Paks\TheGap-WindowsNoEditor.pak</code>放到<code>UnrealPakSwitchv10</code>文件夹后，把他拖到<code>unpack-v11-27.cmd</code>解包，报一个 Warning 和打包报一个 Warning 和一个 Error。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解包</span></span><br><span class="line">LogModuleManager: Warning: ModuleManager: Unable to load module <span class="string">&#x27;OodleDataCompressionFormat&#x27;</span> - 0 instances of that module name found.</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打包</span></span><br><span class="line">LogModuleManager: Warning: ModuleManager: Unable to load module <span class="string">&#x27;OodleDataCompressionFormat&#x27;</span>  - 0 instances of that module name found.</span><br><span class="line">LogWindows: Error: Unable to create backend graph using the default graph settings (DerivedDataBackendGraph) ini=../../../Engine/Programs/UnrealPak/Saved/Config/Windows/Engine.ini.</span><br></pre></td></tr></table></figure>
+
+<p>Warning 参考作者的回复，得知暂时不用管（因为暂时用不着Ooodle，而且麻烦）</p>
+<p><a target="_blank" rel="noopener" href="https://gbatemp.net/threads/how-to-unpack-and-repack-unreal-engine-4-files.531784/post-9568808">https://gbatemp.net/threads/how-to-unpack-and-repack-unreal-engine-4-files.531784/post-9568808</a></p>
+<p>Error 参考 GitHub 上的 issue，加个配置就行了。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/allcoolthingsatoneplace/UnrealPakTool/issues/18#issuecomment-1529130668">https://github.com/allcoolthingsatoneplace/UnrealPakTool/issues/18#issuecomment-1529130668</a></p>
+<h2 id="汉化相关的文件"><a href="#汉化相关的文件" class="headerlink" title="汉化相关的文件"></a>汉化相关的文件</h2><p>解包后主要关注2个地方，记得<strong>备份</strong>原来的这些文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TheGap\Content\UI\Fonts\Files</span><br><span class="line">TheGap\Content\Localization\Game\en\Game.locres</span><br></pre></td></tr></table></figure>
+
+<p>一个是字体文件路径，主要换掉原版游戏英文对应的字体，这些原版字体一般不带简体中文的字库。</p>
+<p>一个是游戏英文文本，因为 TheGap 没有日语韩语这些语言，所以就拿英文来替换了。</p>
+<h1 id="翻译文本"><a href="#翻译文本" class="headerlink" title="翻译文本"></a>翻译文本</h1><p>把 <code>Game.locres</code> 拖到 <code>UE4-Locres-Unpacker.exe</code> 给转成<code>Game.txt</code>，使用显示行数的编辑器或者粘贴到表格啥的或者使用B站逗逗米玩啊在<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1PF411p7G4">视频</a>用到的<code>bat</code>文件转成 csv 来对照翻译。</p>
+<p>我个人认为应该以<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E7%99%BD%E5%90%8D%E5%96%AE">白名单</a>形式翻译文本，只翻译目前在正常流程玩到的文本。因为这样才好对接上下文，从而使翻译的质量更高。当然如果是先全部机翻看看效果也没问题，不过最好记住原来的游戏里面在哪里出现过英文，否则字库缺字还不知道就会不显示出来。</p>
+<p>翻译后，再把<code>Game.txt</code>拖到 <code>UE4-Locres-Unpacker.exe</code> 给转成<code>Game-new.locres</code>后，替换掉原来位置的<code>Game.locres</code>就行了。</p>
+<h1 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h1><p>和翻译文本一样，我认为应该遵循白名单机制，只改翻译了的字的字体，这主要是为了少存一些字体从而让打包后的补丁小一些。</p>
+<p>至于如何找字体，应该先知道原来的文本是什么字体。即先通过游戏内截图翻译前的英文字母，然后搜索<code>TheGap\Content\UI\Fonts\Files</code>里面取字体名后找到对应字母比对，对比找最像的。我用的是<a target="_blank" rel="noopener" href="https://fonts.google.com/">Google fonts</a>找字体</p>
+<p>找找看看这个字体有没有包含简中（一般都没有），没有的话就找个最像的而且包含游戏内该英文字体所有大小的有简中的字体来替代。不过这里有几个要注意的</p>
+<ol>
+<li>游戏是 regular 字体大小的，使用不带后缀的就行。</li>
+<li>有些游戏字体包括 Italic（斜体）的，简中字体一般是没有的，直接拿对应的字体大小替代。</li>
+<li>使用<code>.otf</code>和<code>.ttf</code>的格式都可以。</li>
+</ol>
+<p>找到后，使用 python 的 fonttools 库来把不需要的字符给去掉来减少字体大小。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install fonttools</span><br><span class="line">pyftsubset.exe .\origin-fonts.otf --output-file=target-fonts.ufont --text-file=Game.txt</span><br></pre></td></tr></table></figure>
+
+<p><code>origin-fonts.otf</code>是需要使用的字体，<code>target-fonts.ufont</code>是需要被替换的字体（ufont后缀）。</p>
+<p>去掉不用的字符后，直接将新的同名字体覆盖到原来的字体就行了。</p>
+<h1 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h1><p>使用 VSCode 或者其他能够正则替换的编辑器打开拆包时在<code>UnrealPakSwitchv10</code>根目录下生成的<code>lista.txt</code>。</p>
+<ol>
+<li>将<code>LogPakFile: Display: &quot;</code>全部替换为<code>&quot;../../../</code></li>
+<li>正则匹配，将<code>&quot; offset: (.*)$</code>全部替换为<code>&quot;</code></li>
+<li>找出替换过的文本文件路径和替换过的字体文件路径所在的行，把这些行都复制到一个新的txt文件中（暂时命名为<code>tmp.txt</code>）</li>
+</ol>
+<p>把<code>tmp.txt</code>给拖到<code>pack-v11-27.cmd</code>，生成<code>newpak.pak</code>就是补丁了。</p>
+<h1 id="使用补丁"><a href="#使用补丁" class="headerlink" title="使用补丁"></a>使用补丁</h1><p>把补丁重命名为原来的 pak 包加上 -p，即<code>TheGap-WindowsNoEditor_p.pak</code></p>
+<p>将补丁放到原来游戏的<code>TheGap-WindowsNoEditor.pak</code>同级目录下。</p>
+<p>运行游戏，应该就有效果了。</p>
+<h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><p>我简单体验下汉化拆包解包的过程，通过实践我发现，在2024年的今天，在借助各种大佬们开发的工具后汉化ue4引擎的游戏，还是很简单的。以前的民间汉化组应该没有那么多工具，得自己反汇编啥的，是真的厉害啊。</p>
+<p>在这里，我再次向每一个汉化组说声谢谢！没有你们的用爱发电，我就玩不到 PC 汉化版的 GTA 系列，潜龙谍影系列等优秀游戏了。</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/Aiden2014">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://blog.love98.net">Love98</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://lifeng.dev">LiFeng</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://rdququ.top">QuQu</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://miomiomio.fun">mio</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://nkid00.name">NKID00</a></span>
+        <span>/</span>
+        
+        <span><a href="www.yumoyumo.top">yumo</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://nuotian.furry.pro">NuoTian</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://windpo.top">windpo</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://mxte.cc">MaxtuneLee</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://blog.fooo.in">xun</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="Aiden2014/comment-of-blog"
+    data-repo-id="R_kgDOJI4jAQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOJI4jAc4CU1wC"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>
